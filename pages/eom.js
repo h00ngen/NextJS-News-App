@@ -1,5 +1,7 @@
 import { Toolbar } from '../components/components';
 import styles from '../styles/EOM.module.css'
+import Image from 'next/image'
+
 
 export const EOM = ({ employee }) => {
     return(
@@ -11,8 +13,9 @@ export const EOM = ({ employee }) => {
                     <div className={styles.employeeOfTheMonth}>
                         <h3>Laurynas Gudavičius</h3>
                         <h6>Just a random dude. Nothing else.</h6>
-                        <img src='https://64.media.tumblr.com/4d1daa14f21dda42c3a08b6e32419029/e1b8046b2d6b6d08-39/s250x400/99e38b5a4913f718e3b4c3c5b4bf1eb1bef6fc1b.png' />
-                        <p>He can't be described. It is what it is.</p>
+                        <Image src="https://cdn.drawception.com/images/avatars/647493-B9E.png" alt="Profile picture" width={250} height={250}/> 
+
+                        <p>He can not be described. It is what it is.</p>
                     </div>
                 </div>
         </div>
